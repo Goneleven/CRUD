@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333333;
+}
+
+.body-BemVindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333333;
+}
+
+/*______COMEÇO__REAL______ */
+
+/* Container do Login/Cadastro */
+
+.container-cad {
+    position: relative;
+    /* background: #1c1c1c; */
+    border-radius: 8px;
+    margin-right: 60%;
+    overflow: hidden;
+}
+
+.container-log {
+    position: relative;
+    /* background: #1c1c1c; */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Container Animação do quadrado Login/Cadastro: */
+
+.container-cad::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -50%;
+    width: 450px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, #4D4DFF, #4D4DFF);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.container-log::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -30%;
+    width: 240px;
+    height: 260px;
+    background: linear-gradient(0deg, transparent, #4D4DFF, #4D4DFF);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.container-cad::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -50%;
+    width: 450px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, #4dc7ff, #4dc7ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyFrames animate{
+
+    0%
+    {
+        transform: rotate(0deg)
+    }
+
+    100%
+
+    {
+
+        transform: rotate(360deg);
+
+    }
+}
+
+.container-log::after {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -30%;
+    width: 240px;
+    height: 260px;
+    background: linear-gradient(0deg, transparent, #4dc7ff, #4dc7ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyFrames animate{
+
+    0%
+    {
+        transform: rotate(0deg)
+    }
+
+    100%
+
+    {
+
+        transform: rotate(360deg);
+
+    }
+}
+
+/* Termino da Animação */
+
+
+/* Quadrado para a Sobreposição de Animação: */
+
+.elemento-cad{
+    position: relative;
+    inset: 2.5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background: #3f3f3f;
+    z-index: 10;
+}
+
+.elemento-log{
+    position: relative;
+    inset: 2.5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background: #3f3f3f;
+    z-index: 10;
+}
+
+.elemento-cad h1{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.elemento-log h1{
+    text-align: center;
+}
+
+/* Links */
+
+a{
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Trebuchet MS'
+}
+
+
+/* Caixa de Texto */
+
+input{
+    border: 0px;
+    background: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    width: 98%;
+}
+
+label{
+    color: white;
+}
+
+.input-espaco{
+    margin-left: 1%;
+}
+
+.label-espaco{
+    margin-left: 0.5%;
+}
+
+
+/* Cor da Palavra nos Inputs */
+
+::placeholder{
+    color: white;
+}
+
+
+/* Botão de Entrar no Login */
+
+#botao-entrar, #botao-enviar{
+    font-size: 20px;
+    border: 0px;
+}
+
+#botao-Sair{
+    margin-left: 25%;
+    font-size: 20px;
+    border: 0px;
+    width: 50%;
+    border-radius: 15px;
+    
+}
+
+
+/* Alinhamento do LOGIN (Entrar e Cadastrar-se) */
+
+.container2{
+    margin-top: 55%;
+}
+
+
+/* Botão entrar do LOGIN Alinhado */
+
+.elemento-LogCad{
+    text-align: center;
+}
+
+
+/* Interface pro inputo do Entrar no LOGIN */
+
+.botao-generico{
+    border-radius: 15px;
+    width: 30%;
+    margin-bottom: 10%;
+}
+
+#delete-Button button{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    border: 0px;
+    width: 20%;
+    border-radius: 15px;
+    
+}

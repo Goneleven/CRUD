@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delete</title>
+</head>
+
+<body class="body">
+    <div class="container-del">
+        <div class="elemento-del">
+
+            <input type="button" onclick="enviarDados()" value="Enviar">
+        
+            <br><br>
+
+            <input type="text" id="id" placeholder="ID">
+            <br><br>
+            <input type="text" id="nomeAtualizar" placeholder="NOME">
+            <br><br>
+            <input type="password" id="senhaAtualizar" placeholder="SENHA">
+            <br><br>
+            <input type="text" id="sobrenomeAtualizar" placeholder="SOBRENOME">
+            <br><br>
+            <input type="text" id="emailAtualizar" placeholder="EMAIL">
+            <br><br>
+            <input type="text" id="cpfAtualizar" placeholder="CPF">
+            <br><br>
+            <input type="text" id="telefoneAtualizar" placeholder="TELEFONE">
+            <br><br>
+            <input type="text" id="areaDeInteresseAtualizar" placeholder="AREA DE INTERESSE">
+            <br><br>
+            <input type="text" id="dispDeTempoAtualizar" placeholder="DISP. DE TEMPO">
+            <br><br>
+            <input type="text" id="expAnteriorAtualizar" placeholder="EXP.ANTERIOR">
+            <br><br>
+            <input type="text" id="inforADDAtualizar" placeholder="INFORM.ADD">
+            <br><br><br>
+        
+            <input type="button" onclick="buscarDados()" value="Buscar">
+            <br><br>
+            <input type="button" onclick="atualizarDados()" value="Atualizar">
+
+            <br><br><br><br><br>
+
+            <form>
+                <input type="text" id="cpf" placeholder="CPF"><br><br>
+                <input type="button" onclick="deletarDados()" value="Deletar">
+            </form>
+
+            <br>
+
+            <button id="botao-Sair">
+                <a href="index.html">Sair</a>
+            </button>
+        </div>
+    </div>
+    <script src="script-Delete.js"></script>
+    <script src="../server.js"></script>
+
+</body>
